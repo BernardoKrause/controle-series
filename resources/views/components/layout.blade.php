@@ -10,8 +10,8 @@
     <div class="container">
         <h1>{{ $title }}</h1>
         {{ $slot }}
-        <!-- Formato abaixo, faz com que o blade nao faça o parse e mande simplesmente "@{{ nome }}" para a pagina -->
-        @{{nome}}
+        <!-- Formato abaixo, faz com que o blade nao faça o parse e mande simplesmente "@{{ nome }}" para a pagina 
+        @{{nome}}-->
     </div>
 </body>
 </html>

@@ -19,7 +19,7 @@ Route::get('/', function () {
 });
 
 Route::resource('/series', SeriesController::class)
-    ->only(['index', 'create', 'store', 'destroy'])->whereNumber('id');
+    ->except(('show'))->whereNumber('id');
 
 
 /* Outra sintese seria assim:
