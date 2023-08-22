@@ -6,13 +6,12 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;
 
-class Serie extends Model
+class Series extends Model
 {
     use HasFactory;
     protected $fillable = ['nome'];
-    protected $with = ['temporadas'];
 
-    public function temporadas() {
+    public function seasons() {
         return $this->hasMany(Season::class, 'series_id');
     }
 
